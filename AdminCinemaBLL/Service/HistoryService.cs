@@ -38,4 +38,9 @@ public class HistoryService : BaseService<Movie>, IHistoryService
     {
         return _repo.UpdateStatusExportInHistory(param);
     }
+
+    public bool UpdateStatusInHistorySuscess(OrderGr orderId)
+    {
+        return _repo.UpdateStatusInHistorySuscess(orderId);
+    }
 }

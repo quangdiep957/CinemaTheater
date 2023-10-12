@@ -2,6 +2,10 @@ using AdminCinemaCommon.Models.Paging;
 
 namespace AdminCinemaCommon.Models.History;
 
+public class OrderGr
+{
+    public Guid OrderId { get; set; }
+}
 public class HistoryParam
 {
     public Guid? MovieID { get; set; }
@@ -28,6 +32,7 @@ public class HistoryParam
 
     public bool? IsExported { get; set; }
     public int? Status { get; set; }
+    public Guid OrderId { get; set; }
 }
 
 public class GetPrice

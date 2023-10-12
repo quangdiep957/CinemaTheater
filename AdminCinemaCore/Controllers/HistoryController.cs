@@ -93,6 +93,20 @@ public class HistoryController : ControllerBase
             return StatusCode(500, ex.Message);
         }
     }
+    [HttpPost]
+    [Route("UpdateStatusInHistorySuscess")]
+    public IActionResult UpdateStatusInHistorySuscess(OrderGr orderId)
+    {
+        try
+        {
+            var data = _service.UpdateStatusInHistorySuscess(orderId);
+            return StatusCode(200, data);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
 
 
     [HttpPost]

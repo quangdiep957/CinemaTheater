@@ -13,6 +13,7 @@ public interface IHistory:IBaseRepository
 
     public bool UpdateStatusExportInHistory(History param);
 
+    public bool UpdateStatusInHistorySuscess(OrderGr orderId);
     public bool UpdateStatusExportInCinema(HistoryParam param);
 
     public HistoryPaging GetHistoryPaging(HistoryPagingParam param);

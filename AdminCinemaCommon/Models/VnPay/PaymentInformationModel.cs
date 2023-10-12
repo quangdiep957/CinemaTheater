@@ -8,4 +8,6 @@ public class PaymentInformationModel
     public string Name { get; set; }
 
     public string BankCode {get; set;}
+
+    public string OrderID { get; set; }
 }

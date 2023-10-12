@@ -36,6 +36,12 @@ public class HistoryDAL : BaseRepository<Account>, IHistory
         var check = ExcuteInsert("Proc_UpdateStatusExportedInHistory", param);
         return check;
     }
+    public bool UpdateStatusInHistorySuscess(OrderGr param)
+    {
+        var check = ExcuteInsert("Proc_UpdateStatusInHistorySuscess", param);
+        return check;
+    }
+
 
     public bool UpdateStatusExportInCinema(HistoryParam param)
     {
